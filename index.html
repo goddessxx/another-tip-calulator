@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Online Tip Calculator</h1>
+    </header>
+    <main>
+      <form action="index.html" method="get">
+        <ul>
+          <li class="form-row">
+            <label for="bill-amount">Enter Bill Amount:</label>
+            <input type="text" name="bill-amount" id="bill-amount" placeholder="Bill Amount" />
+          </li>
+          <li class="form-row">
+            <label for="tip-amount">Enter Tip Percentage:</label>
+            <input type="text" name="tip-amount" id="tip-amount" placeholder="Ex: 0.20" />
+          </li>
+          <li class="form-row">
+            <label for="people-count">Number Of People:</label>
+            <input type="text" name="people-count" id="people-count" placeholder="Number of People"/>
+          </li>
+          <li class="btn"><input type="button" value="Calculate Tip" id="button" onclick="calculator()"></li>
+        </form>
+        </ul>
+      <div id="results">
+      </div>
+      <div id="results-per-person"></div>
+    </main>
+    <article>
+      <h2>Reasons To Tip</h2>
+      <ul class="suggestions">
+        <li>Food service workers are often paid less than minimum wage.</li>
+        <li>Some families live exclusively off of their tips.</li>
+        <li>More work goes into service jobs than you’d expect.</li>
+        <li>No one has ever complained about someone being too generous.</li>
+        <li>Your Tipping Level Can Affect The Level Of Service You Receive</li>
+        <li>Tipping Shows Appreciation For The Hard Work Servers</li>
+        <li>Tipping Is A Respectful Custom And Should Be Treated As Such</li>
+      </ul>
+    </article>
+    <footer>Copyright &copy; Goddess Taylor </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

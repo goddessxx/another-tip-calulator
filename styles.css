@@ -1,0 +1,176 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+/* Main Content */
+body {
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  font-family: "Acme", sans-serif;
+  color: #064663;
+}
+header {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  animation: color-animations 20s infinite, slide-in 2s 1;
+  position: relative;
+}
+
+form {
+  position: relative;
+  animation: slide-in 1s 1;
+  margin-right: 1em;
+}
+ul {
+  padding-left: 1em;
+}
+/* This is setting the display to flex */
+.form-row {
+  display: flex;
+  margin-bottom: 1.25em;
+  font-size: 1.5em;
+  list-style: none;
+}
+/* This is setting the width of the label which is the child of .form-row 
+" > " is pointing to the child of form-row */
+.form-row > label {
+  flex: 1;
+}
+.form-row > input {
+  flex: 1;
+  border-radius: 4%;
+  border: none;
+}
+.form-row > input:focus {
+  outline-color: #b2b2b2;
+}
+.btn {
+  text-align: center;
+  list-style: none;
+}
+.btn > input {
+  font-family: "Acme", sans-serif;
+  color: #064663;
+  background-color: #00a8cc;
+  border-radius: 4%;
+  border: none;
+  padding: 0.5em;
+  margin-top: 15px;
+  font-size: 1.2em;
+  margin-right: 0;
+}
+.btn > input:hover {
+  background-color: #bbe1fa;
+}
+h2 {
+  font-size: 1.8em;
+  animation: color-animations 20s infinite, slide-in 1s 1;
+  position: relative;
+}
+.suggestions {
+  animation: slide-in 1s 1;
+  position: relative;
+}
+#results {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 2em;
+}
+#results-per-person {
+  font-size: 1.8em;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  margin-top: 5em;
+}
+/* Animations */
+@keyframes color-animations {
+  0% {
+    color: #064663;
+  }
+  25% {
+    color: #00adb5;
+  }
+  50% {
+    color: #00a8cc;
+  }
+  75% {
+    color: #064663;
+  }
+  100% {
+    color: #639cd9;
+  }
+}
+@keyframes slide-in {
+  from {
+    left: -45em;
+  }
+  to {
+    left: 0.01em;
+  }
+}
+/* Most mobile devices are under 700px so they will get the default stylings */
+/* Most tablets are between 700px and 992px */
+@media (min-width: 43.750.313em) {
+  /* 700px */
+  input {
+    margin-right: 15em;
+  }
+  label {
+    margin-left: 5em;
+  }
+}
+@media (min-width: 50.313em) {
+  /* 805px */
+  input {
+    margin-right: 9.8em;
+  }
+  label {
+    margin-left: 5em;
+  }
+}
+/* Small screens will be be 992px and up. */
+@media (min-width: 62em) {
+  /* 992px */
+  input {
+    margin-right: 20em;
+  }
+  label {
+    margin-left: 10em;
+  }
+}
+/* 1203px */
+@media (min-width: 75.188em) {
+  label {
+    margin-left: 15em;
+  }
+  input {
+    margin-right: 25em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  li {
+    font-size: 1.3em;
+  }
+}
+/* 1392px and up will be for most large screens */
+@media (min-width: 87em) {
+  label {
+    margin-left: 19em;
+  }
+  input {
+    margin-right: 35em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  li {
+    font-size: 1.3em;
+  }
+}
